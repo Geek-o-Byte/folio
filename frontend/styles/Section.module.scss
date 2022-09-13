@@ -1,0 +1,21 @@
+.section{
+    width: 90vw;
+    border-radius: 2rem;
+    border: 1px solid #ffffff;
+    margin:auto;
+    h1{
+        color: #ffffff;
+        width: fit-content;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.achievments{
+    width: inherit;
+    height: 30vh;
+    background-image: url('../public/achivments.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}

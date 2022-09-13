@@ -1,0 +1,12 @@
+.navbar{
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
