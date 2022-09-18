@@ -3,9 +3,16 @@ import Navbar from "./Navbar";
 
 const PageTemplate = (props: any) => {
     return(
-        <div>
+        <div className="page-template">
             <Navbar/>
             {props.children}
+            <style jsx>
+                {`
+                .page-template{
+                    margin: 0 10vw;
+                }
+                `}
+            </style>
         </div>
     )
 }
