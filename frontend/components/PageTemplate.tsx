@@ -9,6 +9,7 @@ const PageTemplate = (props: any) => {
             <style jsx>
                 {`
                 .page-template{
+                    padding-top: 4rem;
                     margin: 0 10vw;
                 }
                 `}
