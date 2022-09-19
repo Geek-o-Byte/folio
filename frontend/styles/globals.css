@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #000000;
-  font-family: 'SpaceGrotesk';
+  font-family: 'SpaceGrotesk', sans-serif;
   color: #ffffff;
 }
 
