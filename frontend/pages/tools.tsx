@@ -2,19 +2,14 @@ import Head from "next/head";
 import {useRouter} from "next/router";
 import PageTemplate from "../components/PageTemplate";
 import ToolCard from "../components/ToolCard";
+import Tag from "../components/Tags/Tag";
 
 const Tools = () => {
-    const router = useRouter();
-    let routerPath: string = router.asPath;
-    routerPath = routerPath.slice(1)
-    routerPath = routerPath.charAt(0).toUpperCase() + routerPath.slice(1)
     return(
       <PageTemplate>
-        <Head>
-          <title>{routerPath} / Max Miriko </title>
-        </Head>
         <h1>Randon staff</h1>
         <hr />
+        <Tag />
         <div className="tools-list">
           <div className="tools-row">
             <div className="tools-item">

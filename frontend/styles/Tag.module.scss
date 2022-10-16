@@ -1,0 +1,9 @@
+.tag{
+    font-style: italic;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    &:hover{
+        font-style: normal;
+    }
+}

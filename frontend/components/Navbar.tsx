@@ -1,14 +1,15 @@
 import React from "react";
+import Link from "next/link";
 import styles from "../styles/Navbar.module.scss"
 
 const Navbar = (props: any) =>{
     return(
         <nav className={styles.navbar}>
-            <li>
-                <ul><a href="/">Home</a></ul>
-                <ul><a href="/notes">Notes</a></ul>
-                <ul><a href="/tools">Tools</a></ul>
-            </li>
+            <ul>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/notes">Notes</Link></li>
+                <li><Link href="/tools">Tools</Link></li>
+            </ul>
         </nav>
     );
 };

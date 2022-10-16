@@ -3,19 +3,33 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
     background: rgba( 0, 0, 0, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    li{
+    border-top: hidden;
+    border-left: hidden;
+    display: flex;
+    justify-content: center;
+    ul{
+        padding: 0;
+        width: 40vw;
         display: flex;
         align-items: center;
-        justify-content: center;
-        a{
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            width: 100vw;
         }
     }
+    
 }
