@@ -1,6 +1,7 @@
 import React from "react";
 import {useRouter} from "next/router";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Head from "next/head";
 
 const PageTemplate = (props: any) => {
@@ -17,6 +18,7 @@ const PageTemplate = (props: any) => {
             </Head>
             <Navbar/>
             {props.children}
+            <Footer/>
             <style jsx>
                 {`
                 .page-template{

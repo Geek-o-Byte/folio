@@ -115,20 +115,22 @@ const Home: NextPage = () => {
             </div>
             <h1>Projects</h1>
             <hr />
-            <a href="">
+            <a href="" className='project_link'>
             <div className="project">
-              <div className="col">
+              <div className="col project_text">
                 <h2>Project name</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repellat distinctio reiciendis aspernatur ad, eum, provident voluptatibus soluta dolorem at totam quam rem fugiat fuga, deserunt reprehenderit laudantium a cupiditate obcaecati. In fuga possimus beatae quod debitis quae dicta nostrum! Consequuntur repellendus inventore doloremque velit quia? Necessitatibus, accusantium. Earum, officiis.</p>
               </div>
               <div className="col">
                 <img src="/visitcard.jpeg" alt="" className='project_img'/>
               </div>
-              <style jsx>{`
+            </div>
+            <style jsx>{`
               .project{
                 transition: all .2s ease-in-out;
-                display: grid;
+                display: flex;
                 grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+                flex-direction: row;
                 padding: 1rem;
                 margin-top: 2rem;
                 border: 1px solid white;
@@ -144,11 +146,29 @@ const Home: NextPage = () => {
                 margin-top: 0;
               }
               .project_img{
-                width: 400px;
+                height: 20vw;
+              }
+              .project_text{
+                margin-right: 1rem;
+              }
+              .project_link{
+                text-decoration: none;
+                color: inherit;
+              }
+              @media (max-width: 860px){
+                .project{
+                  padding-left: auto;
+                  padding-rigth: auto;
+                }
+              }
+              @media (max-width: 480px){
+                .project{
+                  flex-direction: column-reverse;
+                  align-items: center;
+                }
               }
               `}
               </style>
-            </div>
             </a>
         </PageTemplate>
 
